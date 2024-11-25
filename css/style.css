@@ -103,6 +103,7 @@ h2{
 }
 .dos:hover{
     border: 3px solid #fce50d;
+
 }
 .tres:hover{
     border: 3px solid #fce50d;
@@ -138,6 +139,7 @@ h2{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #00000000;
 }
 .uno div h3{
     font-size: 28px;
@@ -149,6 +151,9 @@ h2{
     font-size: 15px;
     margin-bottom: 15px;
     font-family: samsung fina;
+}
+.uno div div p{
+    margin: 0px;
 }
 .uno a{
     font-family: samsung2;
@@ -185,6 +190,9 @@ h2{
     font-size: 10px;
     font-family: samsung fina;
     padding: 10px;
+}
+.dos div div p{
+    margin: 0px;
 }
 .dos a{
     font-family: samsung2;
@@ -227,6 +235,9 @@ h2{
     margin-bottom: 5px;
     font-family: samsung fina;
 }
+.tres div div p{
+    margin: 0px;
+}
 .tres a{
     font-family: samsung2;
     text-decoration: none;
@@ -236,8 +247,6 @@ h2{
     background-color: #01022d;
     color: #dddcdc;
 }
-
-
 
 .grid{
     display: grid;
@@ -249,6 +258,7 @@ h2{
 .grid a{
     padding: 10px;
     background-color: #dddcdc;
+    color: #01022d;
     margin: 20px;
     border-radius: 15px;
     list-style: none;
@@ -264,7 +274,6 @@ h2{
     border: 2px solid #fce50d;
 }
 
-
 .bienvenida{
     display: flex;
     flex-direction: column;
@@ -279,7 +288,7 @@ h2{
     justify-content: center;
     flex-direction: column;
     width: 260px;
-    height: 500px;
+    height: 100%;
     background-color: #01022d;
     border-radius: 15px
 }
@@ -936,6 +945,46 @@ footer iframe{
     color:#1a1a1a;
     font-family: samsung2;
 }
+
+
+/*------------------------------Computación----------------------------------*/
+.elementor-video{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 405px);
+    margin: 20px;
+    gap: 10px;
+}
+.presentacion__vivobook{
+    background-image: url(../img/asus\ logo.jpg);
+    background-position: center;
+    grid-row: span 2;
+    background-color: #fce50d;
+}
+.presentacion__vivobook h2{
+    color: #2628aa;
+    text-shadow: 1px 1px 20px rgba(69,71,215,0.68);
+}
+.presentacion__vivobook p{
+    text-shadow: 1px 1px 11px rgba(255,255,255,0.51);
+    color: #dcdcdc;
+    text-align: center;
+    font-family: samsung2;
+    font-size: 25px;
+    padding: 5px;
+    margin: 0px;
+
+}
+.elementor-video video{
+    width: 800px;
+    height: 400px;
+    background-color: #000000;
+    padding: 10px;
+}
+.fotos__vivobook img{
+    width: 800px;
+    height: 405px;
+}
 /*------------------------------Servicios----------------------------------*/
 
 
@@ -982,43 +1031,6 @@ footer iframe{
     border: none;
 }
 
-/*------------------------------Computación----------------------------------*/
-.elementor-video{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2, 405px);
-    margin: 20px;
-    gap: 10px;
-}
-.presentacion__vivobook{
-    background-image: url(../img/asus\ logo.jpg);
-    background-position: center;
-    grid-row: span 2;
-    background-color: #fce50d;
-}
-.presentacion__vivobook h2{
-    color: #2628aa;
-    text-shadow: 1px 1px 20px rgba(69,71,215,0.68);
-}
-.presentacion__vivobook p{
-    text-shadow: 1px 1px 11px rgba(255,255,255,0.51);
-    color: #dcdcdc;
-    text-align: center;
-    font-family: samsung2;
-    font-size: 25px;
-    padding: 5px;
-
-}
-.elementor-video video{
-    width: 800px;
-    height: 400px;
-    background-color: #000000;
-    padding: 10px;
-}
-.fotos__vivobook img{
-    width: 800px;
-    height: 405px;
-}
 
 
 
