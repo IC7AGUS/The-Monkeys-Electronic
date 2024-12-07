@@ -23,7 +23,6 @@
 *{
     margin: 0;
     padding: 0;
-    color: rgb(0, 0, 0);
     box-sizing: border-box;
 }
 
@@ -116,7 +115,7 @@ h2{
 }
 .tarjetas div a:hover{
     border: 2px solid#fce50d;
-    color: #fce50d;
+    color: #cecbb4;
     background-color: #1a1a1a;
 }
 .uno{
@@ -139,7 +138,6 @@ h2{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #00000000;
 }
 .uno div h3{
     font-size: 28px;
@@ -290,7 +288,7 @@ h2{
     width: 260px;
     height: 100%;
     background-color: #01022d;
-    border-radius: 15px
+    border-radius: 15px;
 }
 
 .bienvenida div div .hero-tarjeta h3{
@@ -342,6 +340,7 @@ footer{
     grid-template-rows: 75px 75px;
     text-align: center;
     align-items: center;
+    list-style: none;
 }
 
 .navegacion li a{

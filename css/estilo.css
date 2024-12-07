@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Solway:wght@300;400;500;700;800&family=Sura:wght@400;700&display=swap");
+.tarjetas .tres, .tarjetas .dos, .tarjetas .uno {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.tarjetas .tres:hover, .tarjetas .dos:hover, .tarjetas .uno:hover {
+  border: 3px solid #fce50d;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  color: #dddcdc;
+  transform: scale(1.02);
+}
+
+.tarjetas .tres div a, .tarjetas .dos a, .tarjetas .uno div a {
+  font-family: samsung2;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #01022d;
+  color: #dddcdc;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+.tarjetas .tres div a:hover, .tarjetas .dos a:hover, .tarjetas .uno div a:hover {
+  border: 2px solid #fce50d;
+  color: #fce50d;
+  background-color: black;
+}
+
+.bienvenida h2, .categorias h2 {
+  color: #dddcdc;
+  font-family: samsung;
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 40px;
+  margin: 10px 0px 10px 0px;
+}
+
+/*font-family: "Titillium Web", sans-serif;*/
+/*font-family: "DynaPuff", serif;*/
+@font-face {
+  font-family: samsung;
+  src: url(../samsung-sharp-sans/samsungsharpsans-bold.otf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: samsung fina;
+  src: url(../samsung-sharp-sans/samsungsharpsans.otf);
+}
+@font-face {
+  font-family: samsung2;
+  src: url(../samsung-sharp-sans/samsungsharpsans-medium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+.header a img {
+  width: 100px;
+  height: 101px;
+  transition-duration: 0.5s;
+}
+.header a img:hover {
+  transform: scale(1.2);
+}
+.header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: #fce50d;
+  font-size: 15px;
+  font-family: "DynaPuff", serif;
+  font-weight: 400;
+  margin: 10px;
+  transition-duration: 0.5s;
+}
+.header nav ul li a:hover {
+  background-color: #fce50d;
+  color: #000000;
+  border-radius: 5px;
+  padding: 5px;
+}
+.header h1 {
+  font-family: samsung;
+  font-weight: 700;
+  color: #dddcdc;
+  text-align: center;
+  font-size: 25px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+  margin: 10px;
+}
+.tarjetas .uno {
+  background-color: #dddcdc;
+  border-radius: 10px;
+  font-family: samsung2;
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+.tarjetas .uno img {
+  border-radius: 10px;
+  margin: 5px 25px 5px 5px;
+  width: 400px;
+  height: 400px;
+  margin: 5px;
+}
+.tarjetas .uno div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tarjetas .uno div h3 {
+  font-size: 28px;
+  font-family: samsung;
+  margin-bottom: 15px;
+}
+.tarjetas .uno div div {
+  margin-right: 5px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: samsung fina;
+}
+.tarjetas .uno div div p {
+  margin: 0px;
+}
+.tarjetas .dos {
+  background-color: #dddcdc;
+  border-radius: 10px;
+  font-family: samsung2;
+  grid-column: span 2;
+}
+.tarjetas .dos img {
+  border-radius: 10px;
+  margin: 3px 0px 3px 3px;
+  width: 200px;
+  height: 200px;
+}
+.tarjetas .dos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tarjetas .dos div h3 {
+  font-size: 20px;
+  font-family: samsung;
+}
+.tarjetas .dos div div {
+  font-size: 12px;
+  font-family: samsung fina;
+  padding: 10px;
+}
+.tarjetas .dos div div p {
+  margin: 0px;
+}
+.tarjetas .tres {
+  background-color: #dddcdc;
+  border-radius: 10px;
+  font-family: samsung2;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tarjetas .tres img {
+  width: 240px;
+  height: 160px;
+  margin: 3px;
+}
+.tarjetas .tres div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tarjetas .tres div h3 {
+  font-size: 22px;
+  font-family: samsung;
+  margin-bottom: 3px;
+}
+.tarjetas .tres div div {
+  margin-right: 0px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-family: samsung fina;
+}
+.tarjetas .tres div div p {
+  margin: 0px;
+}
+.categorias .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+.categorias .grid a {
+  padding: 10px;
+  background-color: #dddcdc;
+  color: #01022d;
+  margin: 20px;
+  border-radius: 15px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: samsung;
+  font-size: 40px;
+  text-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+  transition-duration: 0.5s;
+}
+.categorias .grid a:hover {
+  background-color: #000000;
+  color: #fce50d;
+  border: 2px solid #fce50d;
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+}
+.bienvenida div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bienvenida div .hero-tarjeta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  background-color: #01022d;
+  border-radius: 15px;
+}
+.bienvenida div .hero-tarjeta h3 {
+  color: #dddcdc;
+  text-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+  font-family: samsung;
+  font-size: 35px;
+  margin: 10px 10px 0px 10px;
+}
+.bienvenida div .hero-tarjeta p {
+  font-family: samsung2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  border-radius: 10px;
+  font-size: 28px;
+  margin: 5px 15px 10px 15px;
+  padding: 10px;
+}
+.bienvenida div .cacona {
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .navegacionn {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 80px 80px;
+  text-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+footer .navegacionn li {
+  list-style: none;
+}
+footer .navegacionn li a {
+  font-size: 20px;
+  color: #fce50d;
+  text-decoration: none;
+  font-family: samsung2;
+}
+footer iframe {
+  width: 300px;
+  height: 200px;
+}
+footer .redes h4 {
+  color: #fce50d;
+  margin: 10px;
+  font-family: samsung2;
+  text-align: center;
+}
+footer .redes a {
+  text-decoration: none;
+}
+footer .redes a img {
+  padding: 5px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 1210px) {
+  .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px;
+    margin: 20px;
+  }
+  .tarjetas .uno {
+    display: flex;
+    align-items: center;
+    grid-row: 1/3;
+  }
+  .tarjetas .uno img {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+  }
+  .tarjetas .uno div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .tarjetas .uno div div {
+    margin-right: 0px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .tarjetas .uno div a {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .tarjetas .dos img {
+    margin: 0px;
+    width: 150px;
+    height: 150px;
+  }
+  .tarjetas .dos div h3 {
+    font-size: 12px;
+    font-family: samsung;
+    margin-bottom: 0px;
+  }
+  .tarjetas .dos div div {
+    font-size: 6px;
+    margin-bottom: 0px;
+  }
+  .tarjetas .dos a {
+    font-size: 10px;
+    padding: 6px;
+  }
+  .tarjetas .tres img {
+    width: 170px;
+    height: 113px;
+  }
+  .tarjetas .tres div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 117px;
+  }
+  .tarjetas .tres div h3 {
+    font-size: 15px;
+  }
+  .tarjetas .tres div div {
+    font-size: 8px;
+  }
+  .tarjetas .tres div a {
+    font-size: 10px;
+  }
+}
+.categorias .grid a {
+  font-size: 30px;
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+}
+.bienvenida div {
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bienvenida div .hero-tarjeta {
+  width: 300px;
+  height: 100%;
+}
+.bienvenida div .hero-tarjeta h3 {
+  font-size: 35px;
+}
+.bienvenida div .hero-tarjeta p {
+  font-size: 25px;
+}
+.bienvenida div .cacona {
+  width: 150px;
+  height: 150px;
+}
+
+footer .navegacion {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 40px 40px;
+}
+footer .navegacion li a {
+  font-size: 15px;
+}
+footer iframe {
+  width: 160px;
+  height: 110px;
+}
+footer .redes a img {
+  padding: 10px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 790px) {
+  .header nav ul li a {
+    font-size: 12px;
+  }
+  .header a img {
+    width: 70px;
+    height: 71px;
+  }
+  .header h1 {
+    font-size: 15px;
+  }
+  .tarjetas {
+    grid-template-rows: 200px 200px 300px;
+  }
+  .tarjetas .uno {
+    grid-column: 1/4;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .tarjetas .uno img {
+    width: 250px;
+    height: 250px;
+  }
+  .tarjetas .uno div {
+    flex-direction: column;
+  }
+  .tarjetas .uno div div {
+    display: none;
+  }
+  .tarjetas .uno a {
+    font-size: 10px;
+  }
+  .tarjetas .dos {
+    grid-column: span 3;
+    align-items: center;
+  }
+  .tarjetas .dos img {
+    width: 150px;
+    height: 150px;
+  }
+  .tarjetas .dos div div {
+    display: none;
+  }
+  .tarjetas .dos div h3 {
+    margin-bottom: 20px;
+    width: 127px;
+  }
+  .tarjetas .dos div a {
+    font-size: 13px;
+  }
+  .tres {
+    flex-direction: column;
+  }
+  .tres img {
+    width: 240px;
+    height: 160px;
+  }
+  .tres div h3 {
+    margin-bottom: 10px;
+  }
+  .tres div div {
+    display: none;
+  }
+  .tres div a {
+    font-size: 15px;
+  }
+  .categorias .grid {
+    gap: 20px;
+  }
+  .categorias .grid a {
+    margin: 5px;
+    font-size: 25px;
+  }
+  .bienvenida div img {
+    width: 232px;
+    height: 224px;
+  }
+  footer a img {
+    width: 70px;
+    height: 71px;
+  }
+  footer .navegacion {
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 50px 50px;
+  }
+  footer .navegacion li a {
+    font-size: 10px;
+  }
+  footer iframe {
+    padding: 15px;
+    width: 150px;
+    height: 100px;
+  }
+  footer .redes a img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .header {
+    height: 200px;
+    flex-direction: column;
+  }
+  .header nav ul li a {
+    font-size: 15px;
+    margin: 3px;
+  }
+  .header h1 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .tarjetas {
+    grid-template-rows: 200px 200px 250px 250px;
+    margin: 2px;
+  }
+  .tarjetas .uno {
+    grid-column: 1/7;
+    justify-content: space-evenly;
+  }
+  .tarjetas .uno div div {
+    display: none;
+  }
+  .tarjetas .dos {
+    flex-direction: column;
+  }
+  .tarjetas .tres img {
+    width: 150px;
+    height: 101px;
+    margin: 0px;
+  }
+  .tarjetas .tres div div {
+    display: none;
+  }
+  .categorias h2 {
+    font-size: 20px;
+  }
+  .categorias .grid {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .categorias .grid a {
+    font-size: 20px;
+  }
+  .bienvenida h2 {
+    font-size: 20px;
+  }
+  .bienvenida div {
+    display: flex;
+    flex-direction: column;
+  }
+  .bienvenida div .hero-tarjeta {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .bienvenida div .hero-tarjeta h3 {
+    font-size: 50px;
+  }
+  .bienvenida div .cacona {
+    transform: rotateZ(90deg);
+    width: 300px;
+    height: 300px;
+  }
+  .bienvenida div a img {
+    width: 350px;
+    height: 340px;
+  }
+  footer a img {
+    width: 50px;
+    height: 51px;
+  }
+  footer .navegacionn {
+    grid-template-columns: 60px 60px;
+    grid-template-rows: repeat(2, 30px);
+  }
+  footer .navegacionn li a {
+    font-size: 8px;
+  }
+  footer .redes {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    grid-template-rows: repeat(3, 30px);
+  }
+  footer .redes h4 {
+    font-size: 18px;
+    grid-column: span 2;
+    margin: 0px;
+    text-align: center;
+  }
+  footer .redes a {
+    display: flex;
+    justify-content: center;
+  }
+  footer .redes a img {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header nav ul li a {
+    font-size: 10px;
+  }
+  footer .mono {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
