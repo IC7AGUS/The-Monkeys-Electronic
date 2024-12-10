@@ -833,7 +833,7 @@ footer iframe{
     grid-template-columns: repeat(4, 0.25fr);
     grid-template-rows: 100px 400px 100px 400px;
     gap: 8px;
-    margin: 20px
+    margin: 20px;
 }
 
 .grid-tarjetas-productos h3{

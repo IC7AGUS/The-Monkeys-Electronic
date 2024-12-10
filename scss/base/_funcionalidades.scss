@@ -27,6 +27,7 @@ $colores: #0000009e, #fce50d, #dddcdc, #01022d, white, black;
         border: 2px solid nth($colores, 2);
         color: nth($colores, 2);
         background-color: nth($colores, 6);
+        transform: scale(1.2);
     }
 }
 %h2{
@@ -39,15 +40,15 @@ $colores: #0000009e, #fce50d, #dddcdc, #01022d, white, black;
     padding: 10px;
     font-size: 40px;
     margin: 10px 0px 10px 0px;
-    // animation-name: slide;
-    // animation-duration: 3s;
-    // @keyframes slide{
-    //     from{
-    //         margin-right: 100%;
-    //         width: 200%;
-    //     }
-    //     to{
-    //         margin-right: 0%;
-    //         width: 100%;
-    //     }}
+    animation-name: slide;
+    animation-duration: 3s;
+    @keyframes slide{
+        from{
+            margin-right: 100%;
+            width: 200%;
+        }
+        to{
+            margin-right: 0%;
+            width: 100%;
+        }}
 }
