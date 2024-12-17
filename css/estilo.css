@@ -1,0 +1,1525 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Solway:wght@300;400;500;700;800&family=Sura:wght@400;700&display=swap");
+.tarjetas .tres, .tarjetas .dos, .tarjetas .uno {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.tarjetas .tres:hover, .tarjetas .dos:hover, .tarjetas .uno:hover {
+  border: 3px solid #2628aa;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  color: #dddcdc;
+  transform: scale(1.02);
+}
+
+.productos a, .tarjetas .tres div a, .tarjetas .dos a, .tarjetas .uno div a {
+  font-family: samsung2;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #01022d;
+  color: #dddcdc;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+.productos a:hover, .tarjetas .tres div a:hover, .tarjetas .dos a:hover, .tarjetas .uno div a:hover {
+  border: 2px solid #2628aa;
+  color: #2628aa;
+  background-color: black;
+  transform: scale(1.2);
+}
+
+.servicios h2, .label h2, .nosotros2 h2, .nosotros h2, .hache h2, .elementor-video .presentacion__vivobook h2, .iphone div h2, .productos h2, .grid-tarjetas-productos h2, .bienvenida h2, .categorias h2 {
+  color: #dddcdc;
+  font-family: samsung;
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 40px;
+  margin: 10px 0px 10px 0px;
+  animation-name: slide;
+  animation-duration: 3s;
+}
+@keyframes slide {
+  from {
+    margin-right: 100%;
+    width: 200%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+/*font-family: "Titillium Web", sans-serif;*/
+/*font-family: "DynaPuff", serif;*/
+@font-face {
+  font-family: samsung;
+  src: url(../samsung-sharp-sans/samsungsharpsans-bold.otf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: samsung fina;
+  src: url(../samsung-sharp-sans/samsungsharpsans.otf);
+}
+@font-face {
+  font-family: samsung2;
+  src: url(../samsung-sharp-sans/samsungsharpsans-medium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: none;
+  height: 200px;
+}
+.header a img {
+  width: 100px;
+  height: 101px;
+  transition-duration: 0.5s;
+}
+.header a img:hover {
+  transform: scale(1.2);
+}
+.header nav ul {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: #2628aa;
+  font-size: 15px;
+  font-family: "DynaPuff", serif;
+  font-weight: 400;
+  margin: 10px;
+  transition-duration: 0.5s;
+}
+.header nav ul li a:hover {
+  background-color: #2628aa;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px;
+}
+.header h1 {
+  font-family: samsung;
+  font-weight: 700;
+  color: #dddcdc;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.68);
+  text-align: center;
+  font-size: 25px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+  margin: 10px;
+}
+.tarjetas .uno {
+  background-color: #dddcdc;
+  border-radius: 10px;
+  font-family: samsung2;
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+.tarjetas .uno img {
+  border-radius: 10px;
+  margin: 5px 25px 5px 5px;
+  width: 400px;
+  height: 400px;
+  margin: 5px;
+}
+.tarjetas .uno div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.tarjetas .uno div h3 {
+  font-size: 28px;
+  font-family: samsung;
+  margin-bottom: 15px;
+}
+.tarjetas .uno div div {
+  margin-right: 5px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: samsung fina;
+}
+.tarjetas .uno div div p {
+  margin: 0px;
+}
+.tarjetas .dos {
+  background-color: #dddcdc;
+  border-radius: 10px;
+  font-family: samsung2;
+  grid-column: span 2;
+}
+.tarjetas .dos img {
+  border-radius: 10px;
+  margin: 3px 0px 3px 3px;
+  width: 200px;
+  height: 200px;
+}
+.tarjetas .dos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.tarjetas .dos div h3 {
+  font-size: 20px;
+  font-family: samsung;
+}
+.tarjetas .dos div div {
+  font-size: 12px;
+  font-family: samsung fina;
+  padding: 10px;
+}
+.tarjetas .dos div div p {
+  margin: 0px;
+}
+.tarjetas .tres {
+  background-color: #dddcdc;
+  border-radius: 10px;
+  font-family: samsung2;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tarjetas .tres img {
+  width: 240px;
+  height: 160px;
+  margin: 3px;
+}
+.tarjetas .tres div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.tarjetas .tres div h3 {
+  font-size: 22px;
+  font-family: samsung;
+  margin-bottom: 3px;
+}
+.tarjetas .tres div div {
+  margin-right: 0px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-family: samsung fina;
+}
+.tarjetas .tres div div p {
+  margin: 0px;
+}
+.categorias .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+.categorias .grid a {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  background-color: #dddcdc;
+  margin: 20px;
+  border-radius: 15px;
+  font-size: 40px;
+  color: #01022d;
+  font-family: samsung;
+  padding: 10px;
+  transition: 1s;
+}
+.categorias .grid a:hover {
+  transform: scale(1.1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #2628aa;
+  border: 2px solid #2628aa;
+  font-size: 0px;
+}
+.categorias .grid .cat-1 {
+  background-image: url(../img/telefono-inteligente.png);
+}
+.categorias .grid .cat-1:hover {
+  background-image: url(../img/telefono-inteligente.png);
+}
+.categorias .grid .cat-2 {
+  background-image: url(../img/pantalla-de-portatil.png);
+}
+.categorias .grid .cat-2:hover {
+  background-image: url(../img/pantalla-de-portatil.png);
+}
+.categorias .grid .cat-3 {
+  background-image: url(../img/funda-para-telefono-inteligente.png);
+}
+.categorias .grid .cat-3:hover {
+  background-image: url(../img/funda-para-telefono-inteligente.png);
+}
+.categorias .grid .cat-4 {
+  background-image: url(../img/jugando-videojuegos.png);
+}
+.categorias .grid .cat-4:hover {
+  background-image: url(../img/jugando-videojuegos.png);
+}
+.categorias .grid .cat-5 {
+  background-image: url(../img/reloj.png);
+}
+.categorias .grid .cat-5:hover {
+  background-image: url(../img/reloj.png);
+}
+.categorias .grid .cat-6 {
+  background-image: url(../img/televisor.png);
+}
+.categorias .grid .cat-6:hover {
+  background-image: url(../img/televisor.png);
+}
+
+.bienvenida {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: column;
+}
+.bienvenida div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: none;
+}
+.bienvenida div .hero-tarjeta {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  background-color: #01022d;
+  border-radius: 15px;
+}
+.bienvenida div .hero-tarjeta h3 {
+  color: #dddcdc;
+  text-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+  font-family: samsung;
+  font-size: 35px;
+  margin: 10px 10px 0px 10px;
+}
+.bienvenida div .hero-tarjeta p {
+  font-family: samsung2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  border-radius: 10px;
+  font-size: 28px;
+  margin: 5px 15px 10px 15px;
+  padding: 10px;
+}
+.bienvenida div .flecha {
+  width: 150px;
+  height: 150px;
+}
+
+.grid-tarjetas-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 0.25fr);
+  grid-template-rows: 100px 400px 100px 400px;
+  gap: 8px;
+  margin: 20px;
+}
+.grid-tarjetas-productos h2 {
+  grid-column: span 4;
+}
+.grid-tarjetas-productos div {
+  background-color: #dddcdc;
+  text-align: center;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.grid-tarjetas-productos div:hover {
+  border: 3px solid #2628aa;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  transform: scale(1.02);
+}
+.grid-tarjetas-productos div:hover h3 {
+  color: #dddcdc;
+}
+.grid-tarjetas-productos div img {
+  margin: 10px 10px 20px 10px;
+}
+.grid-tarjetas-productos div h3 {
+  color: black;
+  margin: 15px 5px 30px 5px;
+  font-size: 20px;
+  font-family: samsung;
+}
+.grid-tarjetas-productos div a {
+  font-family: samsung2;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #01022d;
+  border-radius: 10px;
+  padding: 15px;
+  color: #dddcdc;
+}
+
+.productos {
+  text-align: center;
+  margin: 20px;
+}
+.productos h2 {
+  grid-column: span 4;
+}
+.productos p {
+  font-family: samsung fina;
+  text-align: center;
+  font-size: 20px;
+  color: #dddcdc;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  padding: 35px;
+  margin-bottom: 20px;
+}
+.iphone div .fotos {
+  display: flex;
+  justify-content: space-around;
+  align-items: none;
+  flex-direction: none;
+}
+.iphone div p {
+  font-family: samsung fina;
+  text-align: center;
+  font-size: 20px;
+  color: #dddcdc;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  padding: 15px;
+}
+.iphone div .foto-s24 {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
+  align-items: center;
+}
+.iphone div .s24-especificaciones {
+  display: grid;
+  margin: 10px 5px 15px 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 720px);
+  justify-content: center;
+  gap: 10px;
+}
+.iphone div .s24-especificaciones div {
+  background-color: #dddcdc;
+}
+.iphone div .s24-especificaciones div h3 {
+  font-family: samsung;
+  font-size: 35px;
+  color: #dddcdc;
+  background-color: #01022d;
+  text-align: center;
+}
+.iphone div .s24-especificaciones div p {
+  border: 1px solid #000000;
+  font-size: 20px;
+  background-color: #dddcdc;
+  color: #000000;
+  font-family: samsung2;
+}
+
+.elementor-video {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 405px);
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  gap: 10px;
+}
+.elementor-video .presentacion__vivobook {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  grid-row: span 2;
+  background-color: #000000;
+  background-image: url(../img/asus-logo.jpg);
+}
+.elementor-video .presentacion__vivobook h2 {
+  color: #dddcdc;
+  text-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+}
+.elementor-video .presentacion__vivobook p {
+  text-shadow: 1px 1px 11px rgba(255, 255, 255, 0.51);
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  color: #dddcdc;
+  text-align: center;
+  font-family: samsung2;
+  font-size: 25px;
+  padding: 5px;
+  margin: 0px;
+}
+.elementor-video .video video {
+  width: 800px;
+  height: 400px;
+  background-color: #000000;
+  padding: 10px;
+}
+.elementor-video .fotos__vivobook {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+}
+.elementor-video .fotos__vivobook .carousel .carousel-inner {
+  width: 734px;
+}
+.elementor-video .fotos__vivobook .carousel .carousel-inner .d-block {
+  width: 700px;
+  height: 400px;
+}
+
+.grid-tarjetas-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 8px;
+}
+.grid-tarjetas-productos .novena-tarjeta {
+  display: none;
+}
+.grid-tarjetas-productos div {
+  height: 400px;
+  background-color: #dddcdc;
+  text-align: center;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.grid-tarjetas-productos div:hover {
+  border: 3px solid #2628aa;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  transform: scale(1.02);
+}
+.grid-tarjetas-productos div:hover h3 {
+  color: #dddcdc;
+}
+.grid-tarjetas-productos div img {
+  margin: 10px 10px 20px 10px;
+}
+.grid-tarjetas-productos div h3 {
+  color: black;
+  margin: 15px 0px 30px 0px;
+  font-size: 20px;
+  font-family: samsung;
+}
+.grid-tarjetas-productos div a {
+  font-family: samsung2;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #01022d;
+  border-radius: 10px;
+  padding: 15px;
+  color: #dddcdc;
+}
+
+.nosotros p {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  color: #dddcdc;
+  font-size: 30px;
+  margin: 15px;
+  text-align: center;
+  font-family: samsung fina;
+  box-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+}
+
+.nosotros2 h3 {
+  font-size: 40px;
+  color: #dddcdc;
+  text-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+  text-align: center;
+  font-family: samsung2;
+}
+.nosotros2 p {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  color: #dddcdc;
+  font-size: 30px;
+  margin: 15px;
+  text-align: center;
+  font-family: samsung fina;
+  box-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+}
+
+.label {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
+.label form {
+  width: 800px;
+  color: #fc0d71;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.label form div {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 100%;
+  transition: 1s;
+  transition-delay: 0.2s;
+  direction: unset;
+}
+.label form div:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.68);
+}
+.label form div label {
+  color: white;
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.68);
+  background-color: #01022d;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: samsung2;
+  font-size: 30px;
+}
+.label form div input {
+  color: #dddcdc;
+  font-size: 30px;
+  border: none;
+  background-color: #000000;
+  padding: 8px;
+}
+.label form div select {
+  color: #dddcdc;
+  font-size: 30px;
+  border: none;
+  background-color: #000000;
+  padding: 8px;
+}
+.label form div select option {
+  color: #fc0d71;
+  background-color: #1b1b2c;
+}
+.label .enviar {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  margin: 25px;
+}
+.label .enviar input {
+  border: 1px solid #dddcdc;
+  font-family: samsung2;
+  width: 125px;
+  height: 60px;
+  font-size: 30px;
+  transition: 0.5s;
+  color: #dddcdc;
+  background-color: #000000;
+}
+.label .enviar input:hover {
+  background-color: #01022d;
+  color: #dddcdc;
+  border: 3px solid #dddcdc;
+  transform: scale(1.2);
+}
+
+.servicios {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
+.servicios p {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  color: #dddcdc;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  font-family: samsung fina;
+  box-shadow: 1px 1px 20px rgba(69, 71, 215, 0.68);
+}
+
+.bootstrap {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  border: 2px;
+}
+.bootstrap .carousel {
+  width: 800px;
+}
+.bootstrap .carousel .carousel-inner .carousel-item img {
+  height: 400px;
+}
+.bootstrap .carousel .carousel-inner .carousel-caption h5 {
+  color: #dddcdc;
+  background-color: #000000;
+}
+.bootstrap .carousel .carousel-inner .carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  color: #dddcdc;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+  font-family: samsung fina;
+}
+
+.lista__servicio-técnico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lista__servicio-técnico h5 {
+  color: #dddcdc;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 35px;
+  font-family: samsung;
+  text-align: center;
+}
+.lista__servicio-técnico div p {
+  padding: 10px;
+  border-radius: 10px;
+  font-family: samsung;
+  background-color: #000000;
+  margin: 25px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: none;
+}
+footer .mono img {
+  width: 100px;
+  height: 101px;
+  transition-duration: 0.5s;
+}
+footer .mono img:hover {
+  transform: scale(1.2);
+}
+footer .navegacionn {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 80px 80px;
+  text-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+footer .navegacionn li {
+  list-style: none;
+}
+footer .navegacionn li a {
+  font-size: 20px;
+  color: #2628aa;
+  text-decoration: none;
+  font-family: samsung2;
+}
+footer iframe {
+  width: 300px;
+  height: 200px;
+}
+footer .redes h4 {
+  color: #2628aa;
+  margin: 10px;
+  font-family: samsung2;
+  text-align: center;
+}
+footer .redes a {
+  text-decoration: none;
+}
+footer .redes a img {
+  padding: 5px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 1210px) {
+  .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px;
+    margin: 20px;
+  }
+  .tarjetas .uno {
+    display: flex;
+    align-items: center;
+    grid-row: 1/3;
+  }
+  .tarjetas .uno img {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+  }
+  .tarjetas .uno div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .tarjetas .uno div div {
+    margin-right: 0px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .tarjetas .uno div a {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .tarjetas .dos img {
+    margin: 0px;
+    width: 150px;
+    height: 150px;
+  }
+  .tarjetas .dos div h3 {
+    font-size: 12px;
+    font-family: samsung;
+    margin-bottom: 0px;
+  }
+  .tarjetas .dos div div {
+    font-size: 6px;
+    margin-bottom: 0px;
+  }
+  .tarjetas .dos a {
+    font-size: 10px;
+    padding: 6px;
+  }
+  .tarjetas .tres img {
+    width: 170px;
+    height: 113px;
+  }
+  .tarjetas .tres div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 117px;
+  }
+  .tarjetas .tres div h3 {
+    font-size: 15px;
+  }
+  .tarjetas .tres div div {
+    font-size: 8px;
+  }
+  .tarjetas .tres div a {
+    font-size: 10px;
+  }
+}
+.categorias .grid a {
+  font-size: 30px;
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+}
+.bienvenida div {
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bienvenida div .hero-tarjeta {
+  width: 300px;
+  height: 100%;
+}
+.bienvenida div .hero-tarjeta h3 {
+  font-size: 35px;
+}
+.bienvenida div .hero-tarjeta p {
+  font-size: 25px;
+}
+.bienvenida div .cacona {
+  width: 150px;
+  height: 150px;
+}
+
+footer .navegacion {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 40px 40px;
+}
+footer .navegacion li a {
+  font-size: 15px;
+}
+footer iframe {
+  width: 160px;
+  height: 110px;
+}
+footer .redes a img {
+  padding: 10px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 790px) {
+  .header nav ul li a {
+    font-size: 12px;
+  }
+  .header a img {
+    width: 70px;
+    height: 71px;
+  }
+  .header h1 {
+    font-size: 15px;
+  }
+  .tarjetas {
+    grid-template-rows: 200px 200px 300px;
+  }
+  .tarjetas .uno {
+    grid-column: 1/4;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .tarjetas .uno img {
+    width: 250px;
+    height: 250px;
+  }
+  .tarjetas .uno div {
+    flex-direction: column;
+  }
+  .tarjetas .uno div div {
+    display: none;
+  }
+  .tarjetas .uno a {
+    font-size: 10px;
+  }
+  .tarjetas .dos {
+    grid-column: span 3;
+    align-items: center;
+  }
+  .tarjetas .dos img {
+    width: 150px;
+    height: 150px;
+  }
+  .tarjetas .dos div div {
+    display: none;
+  }
+  .tarjetas .dos div h3 {
+    margin-bottom: 20px;
+    width: 127px;
+  }
+  .tarjetas .dos div a {
+    font-size: 13px;
+  }
+  .tres {
+    flex-direction: column;
+  }
+  .tres img {
+    width: 240px;
+    height: 160px;
+  }
+  .tres div h3 {
+    margin-bottom: 10px;
+  }
+  .tres div div {
+    display: none;
+  }
+  .tres div a {
+    font-size: 15px;
+  }
+  .categorias .grid {
+    gap: 20px;
+  }
+  .categorias .grid a {
+    margin: 5px;
+    font-size: 25px;
+  }
+  .bienvenida div img {
+    width: 232px;
+    height: 224px;
+  }
+  footer a img {
+    width: 70px;
+    height: 71px;
+  }
+  footer .navegacion {
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 50px 50px;
+  }
+  footer .navegacion li a {
+    font-size: 10px;
+  }
+  footer iframe {
+    padding: 15px;
+    width: 150px;
+    height: 100px;
+  }
+  footer .redes a img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .header {
+    height: 200px;
+    flex-direction: column;
+  }
+  .header nav ul li a {
+    font-size: 15px;
+    margin: 3px;
+  }
+  .header h1 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .tarjetas {
+    grid-template-rows: 200px 200px 250px 250px;
+    margin: 2px;
+  }
+  .tarjetas .uno {
+    grid-column: 1/7;
+    justify-content: space-evenly;
+  }
+  .tarjetas .uno div div {
+    display: none;
+  }
+  .tarjetas .dos {
+    flex-direction: column;
+  }
+  .tarjetas .tres img {
+    width: 150px;
+    height: 101px;
+    margin: 0px;
+  }
+  .tarjetas .tres div div {
+    display: none;
+  }
+  .categorias h2 {
+    font-size: 20px;
+  }
+  .categorias .grid {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .categorias .grid a {
+    font-size: 20px;
+  }
+  .bienvenida h2 {
+    font-size: 20px;
+  }
+  .bienvenida div {
+    display: flex;
+    flex-direction: column;
+  }
+  .bienvenida div .hero-tarjeta {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .bienvenida div .hero-tarjeta h3 {
+    font-size: 50px;
+  }
+  .bienvenida div .flecha {
+    transform: rotateZ(90deg);
+    width: 150px;
+    height: 150px;
+  }
+  .bienvenida div a img {
+    width: 315px;
+    height: 306px;
+  }
+  footer a img {
+    width: 50px;
+    height: 51px;
+  }
+  footer .navegacionn {
+    grid-template-columns: 60px 60px;
+    grid-template-rows: repeat(2, 30px);
+  }
+  footer .navegacionn li a {
+    font-size: 8px;
+  }
+  footer .redes {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    grid-template-rows: repeat(3, 30px);
+  }
+  footer .redes h4 {
+    font-size: 18px;
+    grid-column: span 2;
+    margin: 0px;
+    text-align: center;
+  }
+  footer .redes a {
+    display: flex;
+    justify-content: center;
+  }
+  footer .redes a img {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header nav ul li a {
+    font-size: 10px;
+  }
+  footer .mono {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .grid-tarjetas-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .iphone div .fotos img {
+    width: 410.4px;
+    height: 500px;
+  }
+  .iphone div .foto-s24 img {
+    width: 896px;
+    height: 504px;
+  }
+  .iphone div .s24-especificaciones {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .iphone div .fotos img {
+    width: 287.28px;
+    height: 350px;
+  }
+  .iphone div .foto-s24 img {
+    width: 627.2px;
+    height: 352.8px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .grid-tarjetas-productos h2 {
+    font-size: 15px;
+  }
+  .productos h2 {
+    font-size: 20px;
+  }
+  .productos p {
+    font-size: 12px;
+  }
+  .iphone div h2 {
+    font-size: 15px;
+  }
+  .iphone div .fotos img {
+    width: 170px;
+    height: 210px;
+  }
+  .iphone div p {
+    font-size: 15px;
+  }
+  .iphone div h2 {
+    font-size: 15px;
+  }
+  .iphone div .foto-s24 img {
+    width: 420px;
+    height: 245px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .hache h2 {
+    font-size: 20px;
+  }
+  .productos h2 {
+    font-size: 20px;
+  }
+  .productos p {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .iphone div .fotos img {
+    width: 158.4px;
+    height: 193.8px;
+  }
+  .iphone div p {
+    font-size: 8px;
+  }
+  .iphone div h2 {
+    font-size: 20px;
+  }
+  .iphone div .foto-s24 img {
+    width: 360px;
+    height: 205px;
+  }
+  .iphone div .s24-especificaciones div h3 {
+    font-size: 15px;
+  }
+  .iphone div .s24-especificaciones div p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1101px) {
+  .elementor-video {
+    grid-template-rows: repeat(2, 205px);
+    grid-template-columns: repeat(2, 400px);
+    gap: 5px;
+  }
+  .elementor-video .presentacion__vivobook {
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+  .elementor-video .presentacion__vivobook h2 {
+    font-size: 30px;
+    margin: 0px;
+  }
+  .elementor-video .presentacion__vivobook p {
+    font-size: 20px;
+  }
+  .elementor-video .video video {
+    width: 400px;
+    height: 200px;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner {
+    width: 400px;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner .d-block {
+    height: 200px;
+  }
+  .grid-tarjetas-productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-tarjetas-productos .novena-tarjeta {
+    display: block;
+  }
+}
+@media screen and (max-width: 810px) {
+  .elementor-video {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 155px);
+    gap: 5px;
+  }
+  .elementor-video .presentacion__vivobook {
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+  .elementor-video .presentacion__vivobook p {
+    font-size: 18px;
+  }
+  .elementor-video .video video {
+    width: 250px;
+    height: 125px;
+    padding: 0px;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner {
+    width: 300px;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner .d-block {
+    height: 155px;
+  }
+  .grid-tarjetas-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-tarjetas-productos .novena-tarjeta {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .elementor-video {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 5px;
+  }
+  .elementor-video .presentacion__vivobook {
+    grid-row: span 1;
+    height: 100%;
+  }
+  .elementor-video .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .elementor-video .video video {
+    width: 400px;
+    height: 200px;
+    padding: 0px;
+  }
+  .elementor-video .fotos__vivobook {
+    display: flex;
+    justify-content: center;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner {
+    width: 360px;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner .d-block {
+    height: 261.6px;
+  }
+  .grid-tarjetas-productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-tarjetas-productos .novena-tarjeta {
+    display: none;
+  }
+}
+@media screen and (max-width: 410px) {
+  .elementor-video {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 0px;
+  }
+  .elementor-video .presentacion__vivobook {
+    grid-row: span 1;
+    height: 100%;
+  }
+  .elementor-video .presentacion__vivobook h2 {
+    padding: 0px;
+    font-size: 20px;
+  }
+  .elementor-video .presentacion__vivobook p {
+    font-size: 10px;
+    margin: 10px;
+  }
+  .elementor-video .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .elementor-video .video video {
+    width: 360px;
+    height: 180px;
+    padding: 0px;
+  }
+  .elementor-video .fotos__vivobook {
+    display: flex;
+    justify-content: center;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner {
+    width: 288px;
+  }
+  .elementor-video .fotos__vivobook .carousel .carousel-inner .d-block {
+    height: 209.28px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .label h2 {
+    font-size: 30px;
+  }
+  .label form {
+    width: 550px;
+  }
+  .nosotros h2 {
+    font-size: 30px;
+  }
+  .nosotros2 h2 {
+    font-size: 30px;
+  }
+  .nosotros2 p {
+    font-size: 25px;
+  }
+  .servicios h2 {
+    font-size: 30px;
+  }
+  .servicios p {
+    font-size: 25px;
+    margin: 15px;
+  }
+  .bootstrap .carousel {
+    width: 550px;
+  }
+  .bootstrap .carousel .carousel-inner .carousel-item img {
+    height: 275px;
+  }
+  .lista__servicio-técnico h5 {
+    font-size: 25px;
+    width: 520px;
+  }
+  .lista__servicio-técnico div p {
+    padding: 10px;
+    border-radius: 10px;
+    font-family: samsung;
+    background-color: #000000;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros h2 {
+    font-size: 25px;
+  }
+  .nosotros p {
+    font-size: 15px;
+    padding: 10px;
+    width: 450px;
+  }
+  .nosotros2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros2 h2 {
+    font-size: 25px;
+  }
+  .nosotros2 h3 {
+    font-size: 20px;
+  }
+  .nosotros2 p {
+    font-size: 15px;
+    padding: 10px;
+    width: 450px;
+    margin: 0px 0px 15px 0px;
+  }
+  .label h2 {
+    font-size: 20px;
+  }
+  .label form {
+    width: 360px;
+    font-size: 15px;
+  }
+  .label form div label {
+    font-size: 25px;
+  }
+  .label form div input {
+    font-size: 25px;
+  }
+  .label form div select {
+    font-size: 20px;
+  }
+  .servicios h2 {
+    font-size: 20px;
+  }
+  .servicios p {
+    font-size: 15px;
+    margin: 5px;
+    width: 450px;
+  }
+  .bootstrap .carousel {
+    width: 450px;
+  }
+  .bootstrap .carousel .carousel-inner .carousel-item img {
+    height: 225px;
+  }
+  .lista__servicio-técnico h5 {
+    font-size: 25px;
+    width: 450px;
+  }
+  .lista__servicio-técnico div p {
+    font-size: 20px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros h2 {
+    font-size: 15px;
+  }
+  .nosotros p {
+    font-size: 10px;
+    padding: 0px;
+    width: 300px;
+  }
+  .nosotros2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros2 h2 {
+    font-size: 15px;
+  }
+  .nosotros2 h3 {
+    font-size: 15px;
+  }
+  .nosotros2 p {
+    font-size: 10px;
+    padding: 0px;
+    width: 300px;
+    margin: 0px 0px 15px 0px;
+  }
+  .label h2 {
+    font-size: 15px;
+  }
+  .label form {
+    width: 360px;
+    font-size: 15px;
+  }
+  .label form div label {
+    font-size: 15px;
+  }
+  .label form div input {
+    font-size: 15px;
+  }
+  .label form div select {
+    font-size: 15px;
+  }
+  .label .enviar {
+    margin: 20px;
+  }
+  .label .enviar input {
+    width: 85px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .servicios h2 {
+    font-size: 20px;
+  }
+  .servicios p {
+    font-size: 10px;
+    margin: 5px;
+    width: 340px;
+  }
+  .bootstrap .carousel {
+    width: 300px;
+  }
+  .bootstrap .carousel .carousel-inner .carousel-item img {
+    height: 150px;
+  }
+  .lista__servicio-técnico h5 {
+    font-size: 20px;
+    width: 359px;
+  }
+  .lista__servicio-técnico div p {
+    font-size: 15px;
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
