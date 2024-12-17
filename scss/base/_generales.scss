@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/*font-family: "Titillium Web", sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Solway:wght@300;400;500;700;800&family=Sura:wght@400;700&display=swap');
+/*font-family: "DynaPuff", serif;*/
+
+@font-face{
+    font-family: samsung;
+    src:url(../samsung-sharp-sans/samsungsharpsans-bold.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face{
+    font-family: samsung fina;
+    src: url(../samsung-sharp-sans/samsungsharpsans.otf);
+}
+@font-face{
+    font-family: samsung2 ;
+    src: url(../samsung-sharp-sans/samsungsharpsans-medium.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1a1a1a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+

@@ -1,0 +1,58 @@
+$colores: #0000009e, #2628aa, #dddcdc, #01022d, white, black;
+
+%grid-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition-duration: 0.5s;
+    &:hover{
+        border: 3px solid nth($colores, 2 );
+        background-color: #0000009e;
+        color: nth($colores, 3 );
+        transform:scale(1.02);
+    }
+}
+%boton{
+    font-family: samsung2;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: nth($colores, 4 );
+    color: nth($colores, 3 );
+    font-size: 20px;
+    transition-duration: 0.5s;
+    &:hover{
+        border: 2px solid nth($colores, 2);
+        color: nth($colores, 2);
+        background-color: nth($colores, 6);
+        transform: scale(1.2);
+    }
+}
+%h2{
+    color: nth($colores, 3 );
+    font-family: samsung;
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 40px;
+    margin: 10px 0px 10px 0px;
+    animation-name: slide;
+    animation-duration: 3s;
+    @keyframes slide{
+        from{
+            margin-right: 100%;
+            width: 200%;
+        }
+        to{
+            margin-right: 0%;
+            width: 100%;
+        }}
+}
+@mixin flex ($display, $justify, $align, $direction){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

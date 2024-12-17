@@ -1,0 +1,51 @@
+footer{
+    background-color:nth($colores, 1 );
+    @include flex(flex, space-evenly, center, none);
+    .mono{
+        img{
+            width: 100px;
+            height: 101px;
+            transition-duration: 0.5s;
+            &:hover{
+                transform:scale(1.2);
+            }
+        }
+    }
+    .navegacionn{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 80px 80px;
+        text-align: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        li{
+            list-style: none;
+            a{
+                font-size: 20px;
+                color:nth($colores, 2 );
+                text-decoration: none;
+                font-family: samsung2;
+            }
+        }
+    }
+    iframe{
+        width: 300px;
+        height:200px;
+    }
+    .redes{
+        h4{
+            color: nth($colores, 2 );
+            margin: 10px;
+            font-family: samsung2;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            img{
+                padding: 5px;
+                margin: 15px;
+            }
+        }
+    }
+}

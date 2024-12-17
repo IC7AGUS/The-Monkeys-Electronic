@@ -1,0 +1,50 @@
+.header{
+    background-color: nth($colores, 1 );
+    margin: 0px;
+    padding: 10px;
+    @include flex(flex, space-evenly, center, none);
+    height: 200px;
+    a{
+        img{
+            width: 100px;
+            height: 101px;
+            transition-duration: 0.5s;
+            &:hover{
+                transform:scale(1.2);
+            }
+        }
+    }
+    nav{
+        ul{
+            @include flex(flex, none, center, none);
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: nth($colores, 2) ;
+                    font-size: 15px;
+                    font-family: "DynaPuff", serif;
+                    font-weight: 400;
+                    margin: 10px;
+                    transition-duration: 0.5s;
+                    &:hover{
+                        background-color: nth($colores, 2);
+                        color: #000000;
+                        border-radius: 5px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-family: samsung;
+        font-weight: 700;
+        color: nth($colores, 3);
+        text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.68);
+        text-align: center;
+        font-size:  25px; 
+    }
+}

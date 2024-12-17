@@ -1,0 +1,635 @@
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    margin: 10px;
+    
+        .uno{
+            background-color: nth($colores, 3 );
+            border-radius: 10px;
+            font-family: samsung2;
+    
+            grid-column: 1/5;
+            grid-row: 1/3;
+            @extend %grid-header;
+    
+            img{
+                border-radius: 10px;
+                margin: 5px 25px 5px 5px;
+                width: 400px;
+                height: 400px;
+                margin: 5px;
+            }
+            div{
+                @include flex(flex, center, center, column);
+                text-align: center;
+    
+                h3{
+                    font-size: 28px;
+                    font-family: samsung;
+                    margin-bottom: 15px;
+                }
+                div{
+                    margin-right: 5px;
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                    font-family: samsung fina;
+                    p{
+                        margin: 0px;
+                    }
+                }
+                a{
+                    @extend %boton;
+                }
+            }
+        }
+        .dos{
+            background-color: nth($colores, 3 );
+            border-radius: 10px;
+            font-family: samsung2;
+            @extend %grid-header;
+            grid-column: span 2;
+            img{
+                border-radius: 10px;
+                margin: 3px 0px 3px 3px;
+                width: 200px;
+                height: 200px;
+            }
+            div{
+                @include flex(flex, center, center, column);
+                text-align: center;
+                h3{
+                    font-size: 20px;
+                    font-family: samsung;
+                }
+                div{
+                    font-size: 12px;
+                    font-family: samsung fina;
+                    padding: 10px;
+                    p{
+                        margin: 0px;
+                    }
+                }
+            }
+            a{
+                @extend %boton;
+            }
+        }
+        .tres{
+            background-color: nth($colores, 3 );
+            border-radius: 10px;
+            font-family: samsung2;
+            grid-column: span 3;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            @extend %grid-header;
+    
+            img{
+                width: 240px;
+                height: 160px;
+                margin: 3px;
+            }
+            div{
+                @include flex(flex, center, center, column);
+                text-align: center;
+    
+                h3{
+                    font-size: 22px;
+                    font-family: samsung;
+                    margin-bottom: 3px;
+                }
+                div{
+                    margin-right: 0px;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    font-family: samsung fina;    
+                    p{
+                        margin: 0px;
+                    }
+                }
+                a{
+                    @extend %boton;
+                }
+            }
+        }
+    }
+    .categorias{
+        h2 {
+            @extend %h2;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 40px;
+            a{                        
+                list-style: none;
+                text-align: center;
+                text-decoration: none;
+                transition-duration: 0.5s;
+                background-color: nth($colores, 3 );
+                margin: 20px;
+                border-radius: 15px;
+                font-size: 40px;
+                color: nth($colores, 4 );
+                font-family: samsung;
+                padding: 10px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: #000000;
+                    color: nth($colores, 2 );
+                    border: 2px solid nth($colores, 2 );
+                    font-size: 0px;
+                }
+            }
+            .cat-1{
+                background-image: url(../img/telefono-inteligente.png);
+                &:hover{
+                    background-image: url(../img/telefono-inteligente.png);
+                }
+            }
+    
+            .cat-2{
+                background-image: url(../img/pantalla-de-portatil.png);
+                &:hover{
+                    background-image: url(../img/pantalla-de-portatil.png);
+                }
+            }
+    
+            .cat-3{
+                background-image: url(../img/funda-para-telefono-inteligente.png);
+                &:hover{
+                    background-image: url(../img/funda-para-telefono-inteligente.png);
+                }
+            }
+    
+            .cat-4{
+                background-image: url(../img/jugando-videojuegos.png);
+                &:hover{
+                    background-image: url(../img/jugando-videojuegos.png);
+                }
+            }
+    
+            .cat-5{
+                background-image: url(../img/reloj.png);
+                &:hover{
+                    background-image: url(../img/reloj.png);
+                }
+            }
+    
+            .cat-6{
+                background-image: url(../img/televisor.png);
+                &:hover{
+                    background-image: url(../img/televisor.png);
+                }
+            }
+        }
+    }
+    .bienvenida{
+        @include flex(flex,space-evenly , space-evenly, column);
+        h2{
+            @extend %h2;
+        }
+        
+        div{
+            @include flex(flex,space-evenly , space-evenly, none);
+            .hero-tarjeta{
+                @include flex(flex, center, none, column);
+                width: auto;
+                height: 100%;
+                background-color: nth($colores, 4 );
+                border-radius: 15px;
+                h3{
+                    color: nth($colores, 3 );
+                    text-shadow: 1px 1px 20px rgba(69,71,215,0.68);
+                    font-family: samsung;
+                    font-size: 35px;
+                    margin: 10px 10px  0px 10px;
+                }
+                p{
+                    font-family: samsung2;
+                    color: nth($colores, 5);
+                    background-color: nth($colores, 1 );
+                    border-radius: 10px;
+                    font-size: 28px;
+                    margin: 5px 15px 10px 15px;
+                    padding: 10px;
+                }
+            }
+    
+            .flecha{
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+    // ------------------Celulares-------------------
+    .grid-tarjetas-productos{
+        display: grid;
+        grid-template-columns: repeat(4, 0.25fr);
+        grid-template-rows: 100px 400px 100px 400px;
+        gap: 8px;
+        margin: 20px;
+        h2{
+            grid-column: span 4;
+            @extend %h2;
+        }
+        div{
+            background-color: #dddcdc;
+            text-align: center;
+            border-radius: 10px;
+            transition-duration: 0.5s;
+            &:hover{
+                border: 3px solid nth($colores, 2 );
+                background-color: #0000009e;
+                transform:scale(1.02);
+                h3{
+                    color:nth($colores, 3) ;
+                }
+            }
+            img{
+                margin: 10px 10px 20px 10px;
+            }
+            h3{
+                color: black;
+                margin: 15px 5px 30px 5px;
+                font-size: 20px;
+                font-family: samsung;
+            }
+            a{
+                font-family: samsung2;
+                text-decoration: none;
+                font-size: 15px;
+                background-color: #01022d;
+                border-radius: 10px;
+                padding: 15px;
+                color: #dddcdc;
+            }
+        }
+    }
+    
+    .productos{
+        text-align: center;
+        margin: 20px;
+        h2{
+            grid-column: span 4;
+            @extend %h2;
+        }
+        p{
+            font-family: samsung fina;
+            text-align: center;
+            font-size: 20px;
+            color: #dddcdc;
+            background-color:#0000009e;
+            padding: 35px; 
+            margin-bottom: 20px;
+        }
+        a{
+            @extend %boton;
+        }
+    }
+    .iphone{
+        div{
+            h2{
+                @extend %h2;
+            }
+            .fotos{
+                @include flex(flex, space-around, none, none);
+            }
+            p{
+                font-family: samsung fina;
+                text-align: center;
+                font-size: 20px;
+                color: #dddcdc;
+                background-color:#0000009e;
+                padding: 15px;
+            }
+        }
+        //s24
+        div{
+            h2{
+                @extend %h2;
+            }
+            .foto-s24{
+                @include flex(flex, center, none, column);
+                align-items: center; 
+            }
+                .s24-especificaciones{
+                    display: grid;
+                    margin: 10px 5px 15px 5px;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(1, 720px);
+                    justify-content: center;
+                    gap: 10px;
+                    div{
+                        background-color: #dddcdc;
+                        h3{
+                            font-family: samsung;
+                            font-size: 35px;
+                            color: nth($colores, 3 );
+                            background-color: #01022d;
+                            text-align: center;
+                        }
+                        p{
+                            border: 1px solid #000000;
+                            font-size: 20px;
+                            background-color: nth($colores, 3 );
+                            color:#000000;
+                            font-family: samsung2;
+                        }
+                    }
+                }
+        }
+    }
+    
+    //--------------computacion
+    .elementor-video{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 405px);
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        gap: 10px;
+        .presentacion__vivobook{
+            @include flex(flex, none, none, column);
+            display: flex;
+            flex-direction: column;
+            background-position: center;
+            grid-row: span 2;
+            background-color: #000000;
+            background-image: url(../img/asus-logo.jpg);
+            h2{
+                @extend %h2;
+                color: nth($colores, 3 );
+                text-shadow: 1px 1px 20px rgba(69,71,215,0.68);
+            }
+            p{
+                text-shadow: 1px 1px 11px rgba(255,255,255,0.51);
+                background-color: #0000009e;
+                color: nth($colores, 3 );
+                text-align: center;
+                font-family: samsung2;
+                font-size: 25px;
+                padding: 5px;
+                margin: 0px;
+            }
+        }
+    
+        .video{
+            video{
+                width: 800px;
+                height: 400px;
+                background-color: #000000;
+                padding: 10px;
+            }
+        }
+    
+        .fotos__vivobook{
+            @include flex(flex, center, none, none);
+            .carousel{
+                .carousel-inner{
+                    width: 734px;
+                    .d-block{
+                        width: 700px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .hache{
+        h2{
+        @extend %h2;
+        }
+    
+    }
+    .grid-tarjetas-productos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 8px;
+        
+        .novena-tarjeta{
+            display: none;
+        }
+        
+        div{
+            height: 400px;
+            background-color: #dddcdc;
+            text-align: center;
+            border-radius: 10px;
+            transition-duration: 0.5s;
+            &:hover{
+                border: 3px solid nth($colores, 2 );
+                background-color: #0000009e;
+                transform:scale(1.02);
+                h3{
+                    color:nth($colores, 3) ;
+                }
+            }
+            img{
+                margin: 10px 10px 20px 10px;
+            }
+            h3{
+                color: black;
+                margin: 15px 0px 30px 0px;
+                font-size: 20px;
+                font-family: samsung;
+            }
+            a{
+                font-family: samsung2;
+                text-decoration: none;
+                font-size: 15px;
+                background-color: #01022d;
+                border-radius: 10px;
+                padding: 15px;
+                color: #dddcdc;
+            }
+        }
+    }
+    
+    //-------------------------nosotros
+    .nosotros{
+        h2{
+            @extend %h2;
+        }
+        p{
+            background-color: #0000009e;
+            color: nth($colores, 3 );
+            font-size: 30px;
+            margin: 15px;
+            text-align: center;
+            font-family: samsung fina;
+            box-shadow: 1px 1px 20px rgba(69,71,215,0.68);
+        }
+    }
+    .nosotros2{
+        h2{
+            @extend %h2;
+        }
+        h3{
+            font-size: 40px;
+            color: nth($colores, 3 );
+            text-shadow: 1px 1px 20px rgba(69,71,215,0.68);
+            text-align: center;
+            font-family: samsung2;
+        }
+        p{
+            background-color: #0000009e;
+            color: nth($colores, 3 );
+            font-size: 30px;
+            margin: 15px;
+            text-align: center;
+            font-family: samsung fina;
+            box-shadow: 1px 1px 20px rgba(69,71,215,0.68);
+        }
+    }
+    .label{
+        @include flex(flex, none, center, column);
+        h2{
+            @extend %h2;
+        }
+        form{
+            width: 800px;
+            color: #fc0d71;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            div{
+                @include flex(flex, center, none, column);
+                margin-bottom: 25px;
+                width: 100%;
+                transition: 1s;
+                transition-delay: 0.2s;
+                direction:unset;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.68);
+                }
+                label{
+                    color: nth($colores, 5 );
+                    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.68);
+                    background-color: #01022d;
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-family: samsung2;
+                    font-size: 30px;
+                }
+                input{
+                    color: nth($colores, 3 );
+                    font-size: 30px;
+                    border: none;
+                    background-color: #000000;
+                    padding: 8px;
+                }
+                select{
+                    color: nth($colores, 3 );
+                    font-size: 30px;
+                    border: none;
+                    background-color: #000000;
+                    padding: 8px;
+                    option{
+                        color: #fc0d71;
+                        background-color: #1b1b2c;
+                    }
+                }
+            }
+        }
+        .enviar{
+            @include flex(flex, center, none, none);
+                margin: 25px;
+            input{
+                border: 1px solid nth($colores, 3 );
+                font-family: samsung2;
+                width: 125px;
+                height: 60px;
+                font-size: 30px;
+                transition: 0.5s;
+                color: nth($colores, 3 );
+                background-color: #000000;
+                &:hover{
+                    background-color: #01022d;
+                    color: nth($colores, 3 );
+                    border: 3px solid nth($colores, 3 );
+                    transform: scale(1.2);
+                }
+    
+            }
+        }
+    }
+    
+    //------------Servicios
+    .servicios{
+        @include flex(flex, none, center, column);
+        h2{
+            @extend %h2
+        }
+        p{
+            background-color: #0000009e;
+            color: nth($colores, 3 );
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+            font-family: samsung fina;
+            box-shadow: 1px 1px 20px rgba(69,71,215,0.68);
+        }
+    }
+    .bootstrap{
+        @include flex(flex, center, none, none);
+        border: 2px;
+        .carousel{
+            width: 800px;
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        height: 400px;
+                    }
+                }
+                .carousel-caption{
+                    h5{
+                        color: nth($colores, 3 );
+                        background-color: #000000;
+                    }
+                    p{
+                        background-color: #0000009e;
+                        color: nth($colores, 3 );
+                        font-size: 15px;
+                        padding: 5px;
+                        text-align: center;
+                        font-family: samsung fina;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .lista__servicio-técnico{
+        @include flex(flex, center, center, column);
+        h5{
+            color: nth($colores, 3 );
+            background-color: #000000;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 35px;
+            font-family: samsung;
+            text-align: center;
+        }
+        div{
+            p{
+                padding: 10px;
+                border-radius: 10px;
+                font-family: samsung;
+                background-color: #000000;
+                margin: 25px;
+            }
+        }
+    }
+    
