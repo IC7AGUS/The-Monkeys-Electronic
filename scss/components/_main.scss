@@ -137,7 +137,7 @@
                 color: nth($colores, 4 );
                 font-family: samsung;
                 padding: 10px;
-                transition: 1s;
+                transition: 0.5s;
                 &:hover{
                     transform: scale(1.1);
                     background-position: center;
@@ -150,42 +150,42 @@
             }
             .cat-1{
                 background-image: url(../img/telefono-inteligente.png);
-                &:hover{
+                &:active{
                     background-image: url(../img/telefono-inteligente.png);
                 }
             }
     
             .cat-2{
                 background-image: url(../img/pantalla-de-portatil.png);
-                &:hover{
+                &:active{
                     background-image: url(../img/pantalla-de-portatil.png);
                 }
             }
     
             .cat-3{
                 background-image: url(../img/funda-para-telefono-inteligente.png);
-                &:hover{
+                &:active{
                     background-image: url(../img/funda-para-telefono-inteligente.png);
                 }
             }
     
             .cat-4{
                 background-image: url(../img/jugando-videojuegos.png);
-                &:hover{
+                &:active{
                     background-image: url(../img/jugando-videojuegos.png);
                 }
             }
     
             .cat-5{
                 background-image: url(../img/reloj.png);
-                &:hover{
+                &:active{
                     background-image: url(../img/reloj.png);
                 }
             }
     
             .cat-6{
                 background-image: url(../img/televisor.png);
-                &:hover{
+                &:active{
                     background-image: url(../img/televisor.png);
                 }
             }
